@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bx13i38eaf4bv"]
+
+[ext_resource type="Script" uid="uid://u404xavtoiqi" path="res://Scenes/game_over.gd" id="1_8fo1c"]
+[ext_resource type="FontFile" uid="uid://crqraivbts16h" path="res://Graphics/Font/subatomic.tsoonami.ttf" id="1_ojehl"]
+
+[node name="GameOver" type="Control" unique_id=325264826]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8fo1c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1244649996]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.22745098, 0.18039216, 0.24705882, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=644910873]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1459177066]
+layout_mode = 2
+
+[node name="GameOverText" type="Label" parent="CenterContainer/VBoxContainer" unique_id=307545377]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ojehl")
+theme_override_font_sizes/font_size = 60
+text = "GAME OVER"
+
+[node name="Score" type="Label" parent="CenterContainer/VBoxContainer" unique_id=464353576]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ojehl")
+theme_override_font_sizes/font_size = 25
+text = "Your Score: "
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1885344545]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 30
+
+[node name="StartAgain" type="Label" parent="MarginContainer" unique_id=2040743682]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ojehl")
+theme_override_font_sizes/font_size = 25
+text = "Press Enter to Start again"
