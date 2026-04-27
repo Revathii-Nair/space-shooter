@@ -13,7 +13,6 @@ config_version=5
 config/name="Space Shooter"
 run/main_scene="uid://cbyp1xwa5d3e1"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
 
 [autoload]
 
