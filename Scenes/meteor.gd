@@ -3,7 +3,7 @@ extends Area2D
 var rotation_speed: float
 var movement_speed: int
 var direction_x: float
-
+var can_Collide := true
 signal collision
 
 func _ready() -> void:
@@ -32,10 +32,15 @@ func _process(delta: float) -> void:
 	rotation += rotation_speed * delta
 
 func _on_body_entered(_body: Node2D) -> void:
-	collision.emit()
+	if can_Collide == true:
+		collision.emit()
 	
 
 func _on_area_entered(area: Area2D) -> void:
 	Global.score +=5
 	area.queue_free()
+	$ExplosionSound.play()
+	$MeteorImage.hide()
+	# so that the music plays before removing the meteor child node
+	await get_tree().create_timer(0.2).timeout
 	queue_free()

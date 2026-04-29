@@ -2,16 +2,44 @@
 
 [ext_resource type="Script" uid="uid://okioub41sr24" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dsx661cxfjh5m" path="res://Graphics/Spaceship/playerShip2_blue.png" id="1_v0iea"]
+[ext_resource type="AudioStream" uid="uid://c0qf1qrefp1by" path="res://Audio/sfx_laser.ogg" id="3_6t5aa"]
+[ext_resource type="AudioStream" uid="uid://cysyv2hek7k56" path="res://Audio/explosion.mp3" id="4_vgqql"]
+
+[sub_resource type="Gradient" id="Gradient_vgqql"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fkybt"]
+gradient = SubResource("Gradient_vgqql")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vgqql"]
+lifetime_randomness = 0.4
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1, 2, 1)
+emission_shape = 1
+emission_sphere_radius = 16.17
+gravity = Vector3(0, 98, 0)
+scale_min = 14.33
+scale_max = 21.0
+color = Color(0.13606048, 0.48352867, 0.5780409, 0.8392157)
+color_ramp = SubResource("GradientTexture1D_fkybt")
+turbulence_enabled = true
 
 [node name="Player" type="CharacterBody2D" unique_id=398633806]
 collision_mask = 6
 script = ExtResource("1_cvnsp")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=863912822]
+position = Vector2(0, 32)
+amount = 15
+lifetime = 0.4
+process_material = SubResource("ParticleProcessMaterial_vgqql")
+
 [node name="PlayerImage" type="Sprite2D" parent="." unique_id=2133739125]
 texture = ExtResource("1_v0iea")
+metadata/_edit_lock_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=94455161]
 polygon = PackedVector2Array(-4, -37, 3, -37, 10, -19, 55, 6, 38, 34, 17, 29, 13, 37, -12, 38, -16, 31, -36, 34, -55, 7, -10, -19)
+metadata/_edit_lock_ = true
 
 [node name="LaserStartPosition" type="Marker2D" parent="." unique_id=790290223]
 position = Vector2(0, -62)
@@ -19,5 +47,11 @@ position = Vector2(0, -62)
 [node name="LaserTimer" type="Timer" parent="." unique_id=1168269538]
 wait_time = 0.2
 one_shot = true
+
+[node name="LaserSound" type="AudioStreamPlayer2D" parent="." unique_id=1125331864]
+stream = ExtResource("3_6t5aa")
+
+[node name="CollisionSound" type="AudioStreamPlayer2D" parent="." unique_id=2141996280]
+stream = ExtResource("4_vgqql")
 
 [connection signal="timeout" from="LaserTimer" to="." method="_on_laser_timer_timeout"]

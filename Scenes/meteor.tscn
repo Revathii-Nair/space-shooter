@@ -1,6 +1,21 @@
 [gd_scene format=3 uid="uid://cyqqgordmh7pa"]
 
 [ext_resource type="Script" uid="uid://brkwfl1v3w61x" path="res://Scenes/meteor.gd" id="1_wm1ig"]
+[ext_resource type="AudioStream" uid="uid://c8t2r4f6l7abk" path="res://Audio/damage.mp3" id="2_wm1ig"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wm1ig"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 35.26
+gravity = Vector3(0, 98, 0)
+scale_min = 7.6699996
+scale_max = 7.6699996
+color = Color(0.96609074, 0.87975854, 0.7877184, 0.827451)
+anim_speed_min = 0.75
+anim_speed_max = 0.75
+anim_offset_min = 0.046699997
+anim_offset_max = 0.046699997
+turbulence_enabled = true
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wm1ig"]
 radius = 45.01111
@@ -10,11 +25,20 @@ collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_wm1ig")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=761400595]
+amount = 10
+lifetime = 0.3
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_wm1ig")
+
 [node name="MeteorImage" type="Sprite2D" parent="." unique_id=679037375]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2013429919]
 position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_wm1ig")
+
+[node name="ExplosionSound" type="AudioStreamPlayer2D" parent="." unique_id=860711110]
+stream = ExtResource("2_wm1ig")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

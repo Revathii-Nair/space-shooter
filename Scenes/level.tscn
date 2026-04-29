@@ -3,12 +3,117 @@
 [ext_resource type="Script" uid="uid://df2po7qljpmrc" path="res://Scenes/level.gd" id="1_81xng"]
 [ext_resource type="PackedScene" uid="uid://wps0hpecyxnr" path="res://Scenes/player.tscn" id="1_k5f4k"]
 [ext_resource type="PackedScene" uid="uid://dn1vdyt00eyk8" path="res://Scenes/ui.tscn" id="3_81xng"]
+[ext_resource type="AudioStream" uid="uid://dfxn2wppcmen2" path="res://Audio/BackgroundM2.mp3" id="4_luodc"]
+[ext_resource type="Texture2D" uid="uid://dkiowxbv3xegt" path="res://Graphics/Stars/Stars1.png" id="5_00k4y"]
+[ext_resource type="Texture2D" uid="uid://cm5uo76ex1vkt" path="res://Graphics/Stars/Stars2.png" id="6_3a44l"]
+[ext_resource type="Texture2D" uid="uid://dasfnsftbkurw" path="res://Graphics/Stars/Stars3.png" id="7_0cmrb"]
+[ext_resource type="Texture2D" uid="uid://ctboro6ienxsa" path="res://Graphics/Stars/Stars4.png" id="8_pnhnk"]
+[ext_resource type="Texture2D" uid="uid://xb204qcn5bdk" path="res://Graphics/Stars/Stars5.png" id="9_24uko"]
+[ext_resource type="Texture2D" uid="uid://bu83a2wbjlm71" path="res://Graphics/Stars/Stars6.png" id="10_gf56v"]
+[ext_resource type="Texture2D" uid="uid://bdcjt6b5p61uy" path="res://Graphics/Stars/Stars7.png" id="11_6y3s5"]
+[ext_resource type="Texture2D" uid="uid://buy6wxlp3jqal" path="res://Graphics/Stars/Stars8.png" id="12_u0did"]
+[ext_resource type="Texture2D" uid="uid://bo6x2welh7lvu" path="res://Graphics/Stars/Stars9.png" id="13_53r2q"]
+[ext_resource type="Texture2D" uid="uid://dfffwh0p8vfsq" path="res://Graphics/Stars/Stars10.png" id="14_luodc"]
+[ext_resource type="Texture2D" uid="uid://ct818yfg6titg" path="res://Graphics/Stars/Stars11.png" id="15_1cgv8"]
+[ext_resource type="Texture2D" uid="uid://dgoegsc1w3ndi" path="res://Graphics/Stars/Stars12.png" id="16_hcs0j"]
+[ext_resource type="Texture2D" uid="uid://dhu4iivrow6qm" path="res://Graphics/Stars/Stars13.png" id="17_t205d"]
+[ext_resource type="Texture2D" uid="uid://b7n8ayginjh05" path="res://Graphics/Stars/Stars14.png" id="18_idpk0"]
+[ext_resource type="Texture2D" uid="uid://dbijsi867p5gq" path="res://Graphics/Stars/Stars15.png" id="19_dw52x"]
+[ext_resource type="Texture2D" uid="uid://ba50lg6hvo1ao" path="res://Graphics/Stars/stars16.png" id="20_luodc"]
+[ext_resource type="Texture2D" uid="uid://col0qro60ni5v" path="res://Graphics/Stars/stars17.png" id="21_1cgv8"]
+[ext_resource type="Texture2D" uid="uid://clwcpi08sg8mk" path="res://Graphics/Stars/stars18.png" id="22_hcs0j"]
+[ext_resource type="Texture2D" uid="uid://c228tvrjhtysw" path="res://Graphics/Stars/stars19.png" id="23_t205d"]
+[ext_resource type="Texture2D" uid="uid://cphj4evnfxtct" path="res://Graphics/Stars/stars20.png" id="24_idpk0"]
+[ext_resource type="Texture2D" uid="uid://c5vri7ydr288i" path="res://Graphics/Stars/stars21.png" id="25_dw52x"]
+[ext_resource type="Texture2D" uid="uid://bpjq1eotunq2j" path="res://Graphics/Stars/stars22.png" id="26_ais7f"]
+[ext_resource type="Texture2D" uid="uid://xpmpfa3fyqif" path="res://Graphics/Stars/stars23.png" id="27_re0q2"]
+[ext_resource type="Texture2D" uid="uid://bung7em725m2j" path="res://Graphics/Stars/stars24.png" id="28_fq0f7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6phgx"]
 size = Vector2(20, 654)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_81xng"]
 size = Vector2(1154, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bp4cd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_00k4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3a44l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0cmrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pnhnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_24uko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gf56v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6y3s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_u0did")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_53r2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_luodc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1cgv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hcs0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_t205d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_idpk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dw52x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_luodc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1cgv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_hcs0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_t205d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_idpk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dw52x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ais7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_re0q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_fq0f7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
 
 [node name="Level" type="Node2D" unique_id=75590089]
 script = ExtResource("1_81xng")
@@ -60,11 +165,21 @@ shape = SubResource("RectangleShape2D_81xng")
 metadata/_edit_lock_ = true
 
 [node name="MeteorTimer" type="Timer" parent="." unique_id=1585992507]
-wait_time = 0.3
+wait_time = 0.6
 autostart = true
 
 [node name="Lasers" type="Node2D" parent="." unique_id=2018973091]
 metadata/_edit_lock_ = true
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=607203461]
+stream = ExtResource("4_luodc")
+volume_db = -14.983
+autoplay = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=188420232]
+position = Vector2(38, 32)
+sprite_frames = SubResource("SpriteFrames_bp4cd")
+frame_progress = 0.88891256
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]

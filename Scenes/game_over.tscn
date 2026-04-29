@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://u404xavtoiqi" path="res://Scenes/game_over.gd" id="1_8fo1c"]
 [ext_resource type="FontFile" uid="uid://crqraivbts16h" path="res://Graphics/Font/subatomic.tsoonami.ttf" id="1_ojehl"]
+[ext_resource type="AudioStream" uid="uid://c71ejv038tsvf" path="res://Audio/gameOver.mp3" id="3_ek8ke"]
+[ext_resource type="AudioStream" uid="uid://252x31yxncv3" path="res://Audio/confirm_tap.mp3" id="4_eoghk"]
 
 [node name="GameOver" type="Control" unique_id=325264826]
 layout_mode = 3
@@ -61,3 +63,9 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_ojehl")
 theme_override_font_sizes/font_size = 25
 text = "Press Enter to Start again"
+
+[node name="BGMusic" type="AudioStreamPlayer2D" parent="." unique_id=195174064]
+stream = ExtResource("3_ek8ke")
+
+[node name="ConfirmMusic" type="AudioStreamPlayer2D" parent="." unique_id=564635447]
+stream = ExtResource("4_eoghk")

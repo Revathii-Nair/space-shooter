@@ -8,7 +8,7 @@ var laser_scene: PackedScene = load("res://Scenes/laser.tscn")
 
 func _ready() -> void:
 	get_tree().call_group('ui','set_health',health)
-
+	$BGMusic.play()
 # to randomize meteor creation
 func _on_meteor_timer_timeout() -> void:
 	#2. Create an instance
@@ -21,10 +21,12 @@ func _on_meteor_timer_timeout() -> void:
 	
 # health updation and changing layout to game over layout 
 func _on_meteor_collision():
+	$Player.play_collision_sound()
 	health -= 1
 	get_tree().call_group('ui','set_health',health)
 	if health <=0:
 		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")	
+	
 
 
 # custom signal function from player scene
