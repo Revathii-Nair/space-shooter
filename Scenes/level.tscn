@@ -29,12 +29,6 @@
 [ext_resource type="Texture2D" uid="uid://xpmpfa3fyqif" path="res://Graphics/Stars/stars23.png" id="27_re0q2"]
 [ext_resource type="Texture2D" uid="uid://bung7em725m2j" path="res://Graphics/Stars/stars24.png" id="28_fq0f7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6phgx"]
-size = Vector2(20, 654)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_81xng"]
-size = Vector2(1154, 20)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_bp4cd"]
 animations = [{
 "frames": [{
@@ -115,6 +109,12 @@ animations = [{
 "speed": 15.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6phgx"]
+size = Vector2(20, 654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81xng"]
+size = Vector2(1154, 20)
+
 [node name="Level" type="Node2D" unique_id=75590089]
 script = ExtResource("1_81xng")
 
@@ -125,6 +125,14 @@ color = Color(0.22745098, 0.18039216, 0.24705882, 1)
 metadata/_edit_lock_ = true
 
 [node name="UI" parent="." unique_id=624304095 instance=ExtResource("3_81xng")]
+
+[node name="Stars" type="Node2D" parent="." unique_id=405957742]
+
+[node name="StarImage" type="AnimatedSprite2D" parent="Stars" unique_id=188420232]
+position = Vector2(569, 357)
+sprite_frames = SubResource("SpriteFrames_bp4cd")
+autoplay = "default"
+frame_progress = 0.88891256
 
 [node name="Player" parent="." unique_id=263775199 instance=ExtResource("1_k5f4k")]
 position = Vector2(556, 592)
@@ -175,11 +183,6 @@ metadata/_edit_lock_ = true
 stream = ExtResource("4_luodc")
 volume_db = -14.983
 autoplay = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=188420232]
-position = Vector2(38, 32)
-sprite_frames = SubResource("SpriteFrames_bp4cd")
-frame_progress = 0.88891256
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
