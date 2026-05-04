@@ -1,3 +1,36 @@
-# Godot 4+ specific ignores
+# Godot-specific
+.import/
+.export/
+mono_crash.*
 .godot/
-/android/
+.cache/
+logs/
+
+# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# Godot Mono/.NET
+.mono/
+*.csproj.user
+*.suo
+*.user
+*.userprefs
+*.rsuser
+
+# IDE configs
+.vscode/
+.idea/
+.vs/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
