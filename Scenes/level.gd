@@ -8,8 +8,7 @@ var laser_scene: PackedScene = load("res://Scenes/laser.tscn")
 
 func _ready() -> void:
 	get_tree().call_group('ui','set_health',health)
-	$BGMusic.play()
-	
+
 	# star animation 
 	var size := get_viewport().get_visible_rect().size
 	var rng := RandomNumberGenerator.new()

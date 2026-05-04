@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c72dwxs7lpdid"]
+
+[ext_resource type="AudioStream" uid="uid://dfxn2wppcmen2" path="res://Audio/BackgroundM2.mp3" id="1_pu4hd"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" unique_id=681683511]
+stream = ExtResource("1_pu4hd")
+autoplay = true

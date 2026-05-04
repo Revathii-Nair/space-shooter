@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://df2po7qljpmrc" path="res://Scenes/level.gd" id="1_81xng"]
 [ext_resource type="PackedScene" uid="uid://wps0hpecyxnr" path="res://Scenes/player.tscn" id="1_k5f4k"]
 [ext_resource type="PackedScene" uid="uid://dn1vdyt00eyk8" path="res://Scenes/ui.tscn" id="3_81xng"]
-[ext_resource type="AudioStream" uid="uid://dfxn2wppcmen2" path="res://Audio/BackgroundM2.mp3" id="4_luodc"]
 [ext_resource type="Texture2D" uid="uid://dkiowxbv3xegt" path="res://Graphics/Stars/Stars1.png" id="5_00k4y"]
 [ext_resource type="Texture2D" uid="uid://cm5uo76ex1vkt" path="res://Graphics/Stars/Stars2.png" id="6_3a44l"]
 [ext_resource type="Texture2D" uid="uid://dasfnsftbkurw" path="res://Graphics/Stars/Stars3.png" id="7_0cmrb"]
@@ -178,11 +177,6 @@ autostart = true
 
 [node name="Lasers" type="Node2D" parent="." unique_id=2018973091]
 metadata/_edit_lock_ = true
-
-[node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=607203461]
-stream = ExtResource("4_luodc")
-volume_db = -14.983
-autoplay = true
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]

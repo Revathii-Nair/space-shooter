@@ -1,11 +1,8 @@
 extends Control
 
-var level_scene: PackedScene = load("res://Scenes/level.tscn")
+var start_scene: PackedScene = load("res://Scenes/start.tscn")
 
 func _ready() -> void:
-	$CenterContainer/VBoxContainer/Score.text = $CenterContainer/VBoxContainer/Score.text + str(Global.score)
-	$BGMusic.play()
-	
 	var rng := RandomNumberGenerator.new()
 	
 	for i in rng.randi_range(20,50):
@@ -21,9 +18,10 @@ func _ready() -> void:
 		star.position = Vector2(rand_x,rand_y)
 		star.play()
 
+
+
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("start"):
-		Global.score=0
+	if(Input.is_action_just_pressed("exit")):
 		$ConfirmMusic.play()
 		await get_tree().create_timer(0.2).timeout
-		get_tree().change_scene_to_packed(level_scene)
+		get_tree().change_scene_to_packed(start_scene)

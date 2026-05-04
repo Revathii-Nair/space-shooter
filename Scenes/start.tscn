@@ -1,0 +1,198 @@
+[gd_scene format=3 uid="uid://d1y3bvhg3jeoa"]
+
+[ext_resource type="FontFile" uid="uid://crqraivbts16h" path="res://Graphics/Font/subatomic.tsoonami.ttf" id="1_3bxa3"]
+[ext_resource type="Script" uid="uid://bxb0dbvwwo33i" path="res://Scenes/start.gd" id="1_5ogh5"]
+[ext_resource type="Texture2D" uid="uid://dkiowxbv3xegt" path="res://Graphics/Stars/Stars1.png" id="2_4h3ew"]
+[ext_resource type="AudioStream" uid="uid://252x31yxncv3" path="res://Audio/confirm_tap.mp3" id="3_lb6bl"]
+[ext_resource type="Texture2D" uid="uid://cm5uo76ex1vkt" path="res://Graphics/Stars/Stars2.png" id="3_vheb2"]
+[ext_resource type="Texture2D" uid="uid://dasfnsftbkurw" path="res://Graphics/Stars/Stars3.png" id="4_3sorl"]
+[ext_resource type="Texture2D" uid="uid://ctboro6ienxsa" path="res://Graphics/Stars/Stars4.png" id="5_7c3rw"]
+[ext_resource type="Texture2D" uid="uid://xb204qcn5bdk" path="res://Graphics/Stars/Stars5.png" id="6_mrev8"]
+[ext_resource type="Texture2D" uid="uid://bu83a2wbjlm71" path="res://Graphics/Stars/Stars6.png" id="7_rya6j"]
+[ext_resource type="Texture2D" uid="uid://bdcjt6b5p61uy" path="res://Graphics/Stars/Stars7.png" id="8_3ybgg"]
+[ext_resource type="Texture2D" uid="uid://buy6wxlp3jqal" path="res://Graphics/Stars/Stars8.png" id="9_qgy5k"]
+[ext_resource type="Texture2D" uid="uid://bo6x2welh7lvu" path="res://Graphics/Stars/Stars9.png" id="10_m5uvf"]
+[ext_resource type="Texture2D" uid="uid://dfffwh0p8vfsq" path="res://Graphics/Stars/Stars10.png" id="11_q5bs3"]
+[ext_resource type="Texture2D" uid="uid://ct818yfg6titg" path="res://Graphics/Stars/Stars11.png" id="12_bqs8q"]
+[ext_resource type="Texture2D" uid="uid://dgoegsc1w3ndi" path="res://Graphics/Stars/Stars12.png" id="13_8wnpg"]
+[ext_resource type="Texture2D" uid="uid://dhu4iivrow6qm" path="res://Graphics/Stars/Stars13.png" id="14_k38ck"]
+[ext_resource type="Texture2D" uid="uid://b7n8ayginjh05" path="res://Graphics/Stars/Stars14.png" id="15_5n546"]
+[ext_resource type="Texture2D" uid="uid://dbijsi867p5gq" path="res://Graphics/Stars/Stars15.png" id="16_7vl5r"]
+[ext_resource type="Texture2D" uid="uid://ba50lg6hvo1ao" path="res://Graphics/Stars/stars16.png" id="17_lxfu4"]
+[ext_resource type="Texture2D" uid="uid://col0qro60ni5v" path="res://Graphics/Stars/stars17.png" id="18_l3xp6"]
+[ext_resource type="Texture2D" uid="uid://clwcpi08sg8mk" path="res://Graphics/Stars/stars18.png" id="19_fd5d7"]
+[ext_resource type="Texture2D" uid="uid://c228tvrjhtysw" path="res://Graphics/Stars/stars19.png" id="20_uvfw6"]
+[ext_resource type="Texture2D" uid="uid://cphj4evnfxtct" path="res://Graphics/Stars/stars20.png" id="21_scxj6"]
+[ext_resource type="Texture2D" uid="uid://c5vri7ydr288i" path="res://Graphics/Stars/stars21.png" id="22_gu14v"]
+[ext_resource type="Texture2D" uid="uid://bpjq1eotunq2j" path="res://Graphics/Stars/stars22.png" id="23_nb122"]
+[ext_resource type="Texture2D" uid="uid://xpmpfa3fyqif" path="res://Graphics/Stars/stars23.png" id="24_ejvxp"]
+[ext_resource type="Texture2D" uid="uid://bung7em725m2j" path="res://Graphics/Stars/stars24.png" id="25_qrly7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_edh2t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4h3ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vheb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3sorl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7c3rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mrev8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rya6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3ybgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qgy5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_m5uvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_q5bs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bqs8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8wnpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_k38ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5n546")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7vl5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lxfu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_l3xp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fd5d7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_uvfw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_scxj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_gu14v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nb122")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ejvxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qrly7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Start" type="Control" unique_id=468585863]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ogh5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=103227270]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.22745098, 0.18039216, 0.24705882, 1)
+
+[node name="Stars" type="Node2D" parent="." unique_id=2048328473]
+
+[node name="StarImage" type="AnimatedSprite2D" parent="Stars" unique_id=1085360671]
+position = Vector2(569, 357)
+sprite_frames = SubResource("SpriteFrames_edh2t")
+autoplay = "default"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=360923101]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -371.5
+offset_top = -48.0
+offset_right = 371.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=417419963]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3bxa3")
+theme_override_font_sizes/font_size = 80
+text = "Space Shooter"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=2134204080]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3bxa3")
+theme_override_font_sizes/font_size = 25
+text = "Start your journey now"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1228052519]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -254.5
+offset_top = -53.0
+offset_right = 254.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=1847310138]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="StartAgain" type="Label" parent="MarginContainer2/HBoxContainer" unique_id=1495369803]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3bxa3")
+theme_override_font_sizes/font_size = 25
+text = "Enter to Start "
+
+[node name="StartAgain2" type="Label" parent="MarginContainer2/HBoxContainer" unique_id=792421941]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3bxa3")
+theme_override_font_sizes/font_size = 25
+text = "Tab for controls "
+
+[node name="ConfirmMusic" type="AudioStreamPlayer2D" parent="." unique_id=149232043]
+stream = ExtResource("3_lb6bl")
