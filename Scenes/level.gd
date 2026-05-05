@@ -45,7 +45,6 @@ func _on_meteor_collision():
 	if health <=0:
 		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")	
 	
-
 # custom signal function from player scene
 func _on_player_laser(pos: Variant) -> void:
 	var laser = laser_scene.instantiate()

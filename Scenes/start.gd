@@ -28,4 +28,3 @@ func _process(_delta: float) -> void:
 		$ConfirmMusic.play()
 		await get_tree().create_timer(0.2).timeout
 		get_tree().change_scene_to_packed(menu_scene)
-		

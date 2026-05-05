@@ -120,6 +120,8 @@ script = ExtResource("1_81xng")
 [node name="BG" type="ColorRect" parent="." unique_id=496600070]
 offset_right = 1153.0
 offset_bottom = 648.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 color = Color(0.22745098, 0.18039216, 0.24705882, 1)
 metadata/_edit_lock_ = true
 

@@ -18,8 +18,8 @@ config/name="Space Shooter"
 run/main_scene="uid://d1y3bvhg3jeoa"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://dsx661cxfjh5m"
-config/macos_native_icon="uid://dsx661cxfjh5m"
-config/windows_native_icon="uid://dsx661cxfjh5m"
+config/macos_native_icon="res://Graphics/icon.icns"
+config/windows_native_icon="res://Graphics/icon.ico"
 
 [autoload]
 
@@ -29,7 +29,6 @@ BackgroundMusic="*uid://c72dwxs7lpdid"
 [display]
 
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [dotnet]
 

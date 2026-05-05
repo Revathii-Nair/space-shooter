@@ -18,8 +18,6 @@ func _ready() -> void:
 		star.position = Vector2(rand_x,rand_y)
 		star.play()
 
-
-
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("exit")):
 		$ConfirmMusic.play()

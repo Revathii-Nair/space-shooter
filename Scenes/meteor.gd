@@ -7,7 +7,6 @@ var can_Collide := true
 signal collision
 
 func _ready() -> void:
-	
 	var rng := RandomNumberGenerator.new()
 	
 	# random meteor graphics
@@ -25,7 +24,6 @@ func _ready() -> void:
 	movement_speed = rng.randi_range(100,500)
 	direction_x = rng.randi_range(-1,1)
 
-
 func _process(delta: float) -> void:
 	# meteor movement
 	position += Vector2(direction_x,1) *movement_speed *delta
@@ -35,7 +33,6 @@ func _on_body_entered(_body: Node2D) -> void:
 	if can_Collide == true:
 		collision.emit()
 	
-
 func _on_area_entered(area: Area2D) -> void:
 	Global.score +=5
 	area.queue_free()
